@@ -25,8 +25,7 @@ Remote_Deployment_Manager/
 ├── playbooks/          # YAML formatında tanımlanmış dağıtım senaryoları
 ├── inventory/          # Sunucu listeleri ve grup tanımları (hosts.ini / json)
 └── logs/               # İşlem ve hata logları
-
-
+'''text
 ## 🛡️ Otomasyon ve Güvenilirlik
 
 Proje, "Sıfır Kesinti" (Zero Downtime) hedefine yönelik kendi kendini denetleme yeteneklerine sahiptir:
