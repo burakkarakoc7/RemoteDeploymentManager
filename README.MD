@@ -50,7 +50,7 @@ En kapsamlı ve görsel deneyim için Streamlit arayüzünü kullanın:
 ```bash
 streamlit run src/ui/app.py
 ```
-Özellikler: Sürükle-bırak dosya yükleme, canlı risk metrikleri, PII dağılım grafikleri, entropi grafiği ve "Run Full Audit" butonu.
+* **Özellikler:** Sürükle-bırak dosya yükleme, canlı risk metrikleri, PII dağılım grafikleri, entropi grafiği ve "Run Full Audit" butonu.
 
 ### 2. Terminal (CLI) Modu
 Hızlı taramalar ve DevOps entegrasyonu için idealdir:
