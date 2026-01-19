@@ -41,3 +41,11 @@ Proje, "Sıfır Kesinti" (Zero Downtime) hedefine yönelik kendi kendini denetle
 | **İzlenebilirlik (Audit Trail)** | Her dağıtım emri, çalıştıran kullanıcı ve IP adresiyle birlikte imzalı JSON loglarına kaydedilir. |
 | **Sır Yönetimi (Secret Mgmt)** | SSH anahtarları ve API token'ları asla plaintext saklanmaz; Vault entegrasyonu ile bellekte çözülür. |
 | **Yetkilendirme (RBAC)** | "Deployer", "Viewer" ve "Admin" rolleri ile sadece yetkili personelin üretim ortamına (Production) müdahalesi sağlanır. |
+
+## 🕹️ Kullanım Şekilleri
+
+### 1. İnteraktif Dashboard (Streamlit UI)
+En kapsamlı ve görsel deneyim için Streamlit arayüzünü kullanın:
+
+```bash
+streamlit run src/ui/app.py
