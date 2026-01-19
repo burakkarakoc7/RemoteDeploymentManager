@@ -15,7 +15,7 @@ Proje, basit bir SSH komut dosyasının ötesinde hibrit bir dağıtım ve orkes
 
 Sistem, profesyonel DevOps standartlarına uygun, genişletilebilir ve modüler bir hiyerarşiye sahiptir:
 
-```text
+
 Remote_Deployment_Manager/
 ├── src/
 │   ├── core/           # Ana orkestrasyon motoru (orchestrator.py) ve SSH wrapper
