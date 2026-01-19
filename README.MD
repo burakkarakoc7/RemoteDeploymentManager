@@ -30,10 +30,9 @@ Remote_Deployment_Manager/
 ## 🛡️ Otomasyon ve Güvenilirlik
 
 Proje, "Sıfır Kesinti" (Zero Downtime) hedefine yönelik kendi kendini denetleme yeteneklerine sahiptir:
-
-* **Pre-Flight Checks:** Dağıtım başlamadan önce disk alanı, port durumu ve bellek uygunluğunu otomatik kontrol eder.
-* **Canary Release:** Yeni sürümü önce trafiğin %5'ini alan sunuculara yükler, hata oranı (error rate) artmazsa tüm sisteme yayar.
-* **CI/CD Ready:** Jenkins, GitLab CI ve GitHub Actions pipeline'larına tek satırlık komut ile entegre olabilir ve çıkış kodlarına (exit codes 0/1) tam uyumludur.
+ **Pre-Flight Checks:** Dağıtım başlamadan önce disk alanı, port durumu ve bellek uygunluğunu otomatik kontrol eder.
+ **Canary Release:** Yeni sürümü önce trafiğin %5'ini alan sunuculara yükler, hata oranı (error rate) artmazsa tüm sisteme yayar.
+ **CI/CD Ready:** Jenkins, GitLab CI ve GitHub Actions pipeline'larına tek satırlık komut ile entegre olabilir ve çıkış kodlarına (exit codes 0/1) tam uyumludur.
 
 
 ## 📋 Güvenlik ve Audit Uyumluluğu (SOC2 & ISO 27001)
