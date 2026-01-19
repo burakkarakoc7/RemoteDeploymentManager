@@ -1,0 +1,16 @@
+{
+  "project_name": "Remote Deployment Manager",
+  "version": "2.4.0-stable",
+  "codename": "Atomic-Shield",
+  "description": "Agentless DevOps Automation & Rollback Engine",
+  "repository": "github.com/kullaniciadi/Remote_Deployment_Manager",
+  "maintainer": "DevOps Team",
+  "license": "MIT",
+  "tech_stack": [
+    "Python 3.11",
+    "Ansible Runner",
+    "Streamlit UI",
+    "AsyncIO Core"
+  ],
+  "supported_platforms": ["Ubuntu", "CentOS", "RHEL", "Debian"]
+}
