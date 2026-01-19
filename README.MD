@@ -52,8 +52,15 @@ streamlit run src/ui/app.py
 ```
 Özellikler: Sürükle-bırak dosya yükleme, canlı risk metrikleri, PII dağılım grafikleri, entropi grafiği ve "Run Full Audit" butonu.
 
-2. Terminal (CLI) Modu
+### 2. Terminal (CLI) Modu
 Hızlı taramalar ve DevOps entegrasyonu için idealdir:
+
+```bash
+# Tek dosya tarama
+python src/core/engine.py --scan application.log
+
+# Canlı logları izle (Pipe)
+tail -f access.log | python src/core/engine.py --scan -
 
 ## 🔌 Kurulum (Sanal Ortam)
 
