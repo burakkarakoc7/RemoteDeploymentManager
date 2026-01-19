@@ -11,8 +11,9 @@ Proje, basit bir SSH komut dosyasının ötesinde hibrit bir dağıtım ve orkes
 * **Drift Detection (Konfigürasyon Sapma Tespiti):** Sunucudaki canlı konfigürasyon ile Git deposundaki "Infrastructure as Code" (IaC) tanımları arasındaki farkları (Drift) algılar ve raporlar.
 * **Parallel Execution Engine:** `asyncio` tabanlı motoru sayesinde binlerce sunucuya aynı anda, düşük gecikme (low-latency) ile komut gönderebilir.
 
-## 🏗️ Proje Mimarisi
-Sistem, profesyonel DevOps standartlarına uygun modüler bir hiyerarşiye sahiptir:
+## 🧬 Proje Mimarisi
+
+Sistem, profesyonel DevOps standartlarına uygun, genişletilebilir ve modüler bir hiyerarşiye sahiptir:
 
 ```text
 Remote_Deployment_Manager/
@@ -25,25 +26,22 @@ Remote_Deployment_Manager/
 ├── inventory/          # Sunucu listeleri ve grup tanımları (hosts.ini / json)
 └── logs/               # İşlem ve hata logları
 
+🛡️ Otomasyon ve GüvenilirlikProje, "Sıfır Kesinti" (Zero Downtime) hedefine yönelik kendi kendini denetleme yeteneklerine sahiptir:Pre-Flight Checks: Dağıtım başlamadan önce disk alanı, port durumu ve bellek uygunluğunu otomatik kontrol eder.Canary Release: Yeni sürümü önce trafiğin %5'ini alan sunuculara yükler, hata oranı (error rate) artmazsa tüm sisteme yayar.CI/CD Ready: Jenkins, GitLab CI ve GitHub Actions pipeline'larına tek satırlık komut ile entegre olabilir ve çıkış kodlarına (exit codes 0/1) tam uyumludur.📋 Güvenlik ve Audit Uyumluluğu (SOC2 & ISO 27001)İlkeTeknik Karşılıkİzlenebilirlik (Audit Trail)Her dağıtım emri, çalıştıran kullanıcı ve IP adresiyle birlikte imzalı JSON loglarına kaydedilir.Sır Yönetimi (Secret Mgmt)SSH anahtarları ve API token'ları asla plaintext saklanmaz; Vault entegrasyonu ile bellekte çözülür.Yetkilendirme (RBAC)"Deployer", "Viewer" ve "Admin" rolleri ile sadece yetkili personelin üretim ortamına (Production) müdahalesi sağlanır.🕹️ Kullanım Şekilleri1. İnteraktif Dashboard (Streamlit UI)En kapsamlı ve görsel deneyim için Streamlit arayüzünü kullanın:Bashstreamlit run src/ui/app.py
+Özellikler: Sürükle-bırak dosya yükleme, canlı risk metrikleri, PII dağılım grafikleri, entropi grafiği ve "Run Full Audit" butonu.2. Terminal (CLI) ModuHızlı taramalar ve DevOps entegrasyonu için idealdir:Bash# Tek dosya tarama
+python src/core/engine.py --scan application.log
 
+# Canlı logları izle (Pipe)
+tail -f access.log | python src/core/engine.py --scan -
+## 🔌 Kurulum (Sanal Ortam)Projeyi izole ve güvenli bir şekilde çalıştırmak için aşağıdaki adımları izleyin:Bash# 1. Projeyi klonlayın
+git clone [https://github.com/kullaniciadi/Remote_Deployment_Manager.git](https://github.com/kullaniciadi/Remote_Deployment_Manager.git)
+cd Remote_Deployment_Manager
 
-## 🛡️ Otomasyon ve Güvenilirlik
+# 2. Sanal ortamı (venv) kurun ve aktif edin
+python3 -m venv venv
+source venv/bin/activate  # Windows için: venv\Scripts\activate
 
-Proje, "Sıfır Kesinti" (Zero Downtime) hedefine yönelik kendi kendini denetleme yeteneklerine sahiptir:
- **Pre-Flight Checks:** Dağıtım başlamadan önce disk alanı, port durumu ve bellek uygunluğunu otomatik kontrol eder.
- **Canary Release:** Yeni sürümü önce trafiğin %5'ini alan sunuculara yükler, hata oranı (error rate) artmazsa tüm sisteme yayar.
- **CI/CD Ready:** Jenkins, GitLab CI ve GitHub Actions pipeline'larına tek satırlık komut ile entegre olabilir ve çıkış kodlarına (exit codes 0/1) tam uyumludur.
+# 3. Bağımlılıkları yükleyin
+pip install -r requirements.txt
 
-
-## 📋 Güvenlik ve Audit Uyumluluğu (SOC2 & ISO 27001)
-
-| İlke | Teknik Karşılık |
-| :--- | :--- |
-| **İzlenebilirlik (Audit Trail)** | Her dağıtım emri, çalıştıran kullanıcı ve IP adresiyle birlikte imzalı JSON loglarına kaydedilir. |
-| **Sır Yönetimi (Secret Mgmt)** | SSH anahtarları ve API token'ları asla plaintext saklanmaz; Vault entegrasyonu ile bellekte çözülür. |
-| **Yetkilendirme (RBAC)** | "Deployer", "Viewer" ve "Admin" rolleri ile sadece yetkili personelin üretim ortamına (Production) müdahalesi sağlanır. |
-
-
-
-
-
+# 4. Otomasyon kurulumunu ve sistem kontrolünü tamamlayın
+chmod +x setup.sh run_tests.sh
