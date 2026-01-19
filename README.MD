@@ -61,7 +61,7 @@ python src/core/engine.py --scan application.log
 
 # Canlı logları izle (Pipe)
 tail -f access.log | python src/core/engine.py --scan -
-
+```
 ## 🔌 Kurulum (Sanal Ortam)
 
 Projeyi izole ve güvenli bir şekilde çalıştırmak için aşağıdaki adımları izleyin:
