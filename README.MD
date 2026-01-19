@@ -49,3 +49,26 @@ En kapsamlı ve görsel deneyim için Streamlit arayüzünü kullanın:
 
 ```bash
 streamlit run src/ui/app.py
+
+
+
+
+
+## 🔌 Kurulum (Sanal Ortam)
+
+Projeyi izole ve güvenli bir şekilde çalıştırmak için aşağıdaki adımları izleyin:
+
+```bash
+# 1. Projeyi klonlayın
+git clone [https://github.com/kullaniciadi/Remote_Deployment_Manager.git](https://github.com/kullaniciadi/Remote_Deployment_Manager.git)
+cd Remote_Deployment_Manager
+
+# 2. Sanal ortamı (venv) kurun ve aktif edin
+python3 -m venv venv
+source venv/bin/activate  # Windows için: venv\Scripts\activate
+
+# 3. Bağımlılıkları yükleyin
+pip install -r requirements.txt
+
+# 4. Otomasyon kurulumunu ve sistem kontrolünü tamamlayın
+chmod +x setup.sh run_tests.sh
