@@ -1,0 +1,18 @@
+# Python System
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Logs and Databases
+logs/*.log
+*.db
+*.sqlite3
+
+# IDE Settings
+.vscode/
+.idea/
+
+# Project Specific
+playbooks/secrets/
+inventory/production_keys.pem
