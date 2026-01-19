@@ -42,9 +42,18 @@ Proje, "Sıfır Kesinti" (Zero Downtime) hedefine yönelik kendi kendini denetle
 | **Sır Yönetimi (Secret Mgmt)** | SSH anahtarları ve API token'ları asla plaintext saklanmaz; Vault entegrasyonu ile bellekte çözülür. |
 | **Yetkilendirme (RBAC)** | "Deployer", "Viewer" ve "Admin" rolleri ile sadece yetkili personelin üretim ortamına (Production) müdahalesi sağlanır. |
 
+## 🕹️ Kullanım Şekilleri
 
+### 1. İnteraktif Dashboard (Streamlit UI)
+En kapsamlı ve görsel deneyim için Streamlit arayüzünü kullanın:
 
+```bash
+streamlit run src/ui/app.py
+```
+Özellikler: Sürükle-bırak dosya yükleme, canlı risk metrikleri, PII dağılım grafikleri, entropi grafiği ve "Run Full Audit" butonu.
 
+2. Terminal (CLI) Modu
+Hızlı taramalar ve DevOps entegrasyonu için idealdir:
 
 ## 🔌 Kurulum (Sanal Ortam)
 
