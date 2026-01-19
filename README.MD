@@ -15,7 +15,7 @@ Proje, basit bir SSH komut dosyasının ötesinde hibrit bir dağıtım ve orkes
 
 Sistem, profesyonel DevOps standartlarına uygun, genişletilebilir ve modüler bir hiyerarşiye sahiptir:
 
-
+```text
 Remote_Deployment_Manager/
 ├── src/
 │   ├── core/           # Ana orkestrasyon motoru (orchestrator.py) ve SSH wrapper
@@ -25,7 +25,7 @@ Remote_Deployment_Manager/
 ├── playbooks/          # YAML formatında tanımlanmış dağıtım senaryoları
 ├── inventory/          # Sunucu listeleri ve grup tanımları (hosts.ini / json)
 └── logs/               # İşlem ve hata logları
-
+```
 ## 🛡️ Otomasyon ve Güvenilirlik
 
 Proje, "Sıfır Kesinti" (Zero Downtime) hedefine yönelik kendi kendini denetleme yeteneklerine sahiptir:
