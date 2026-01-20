@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "remote-deployment-manager"
+version = "2.4.0"
+description = "Agentless DevOps Automation & Rollback Engine"
+authors = [
+  { name="DevOps Team", email="admin@deployment-manager.com" },
+]
+dependencies = [
+  "streamlit",
+  "paramiko",
+  "ansible-runner",
+  "rich"
+]
+requires-python = ">=3.9"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
