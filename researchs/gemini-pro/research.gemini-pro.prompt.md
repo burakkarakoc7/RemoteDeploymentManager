@@ -2,7 +2,7 @@
 Aşağıdaki promptlar, "Remote Deployment Manager" konusundaki derinlemesine araştırmayı ve teknik raporu oluşturmak için kullanılmıştır.
 
 ## Ana Prompt
-**Rol:-*Sen, Global bir teknoloji firmasında çalışan kıdemli bir Teknik Operasyonlar Direktörü ve DevOps Uzmanısın. Görev: "Uzaktan Dağıtım Yöneticisi (Remote Deployment Manager)" rolü hakkında, akademik ve sektörel standartlara uygun, kapsamlı bir teknik araştırma raporu hazırla. Bağlam: Projemiz, açık kaynak işletim sistemleri ve dağıtık sistemler üzerine odaklanmaktadır. Rapor, hem teknik mimariyi hem de yönetimsel süreçleri kapsamalıdır.
+**Rol:*Sen, Global bir teknoloji firmasında çalışan kıdemli bir Teknik Operasyonlar Direktörü ve DevOps Uzmanısın. Görev: "Uzaktan Dağıtım Yöneticisi (Remote Deployment Manager)" rolü hakkında, akademik ve sektörel standartlara uygun, kapsamlı bir teknik araştırma raporu hazırla. Bağlam: Projemiz, açık kaynak işletim sistemleri ve dağıtık sistemler üzerine odaklanmaktadır. Rapor, hem teknik mimariyi hem de yönetimsel süreçleri kapsamalıdır.
 
 İsterler ve Kısıtlar:
 
