@@ -1,0 +1,25 @@
+# Remote Deployment Manager - Configuration Schema v2.1
+# Bu dosya, bir dağıtım paketinin sahip olması gereken yapıyı tanımlar.
+
+apiVersion: "deploy.manager/v1"
+kind: "DeploymentSpec"
+metadata:
+  name: "example-service"
+  environment: "production"
+
+spec:
+  # Dağıtım Stratejisi: 'atomic', 'canary' veya 'blue-green'
+  strategy: "atomic"
+  
+  # Hata durumunda otomatik geri alma
+  auto_rollback: true
+  rollback_threshold_error_rate: 0.05  # %5 hata oranı
+
+  targets:
+    - group: "web-servers"
+      hosts: ["192.168.1.10", "192.168.1.11"]
+      user: "deploy-admin"
+
+  hooks:
+    pre_deploy: "systemctl stop my-service"
+    post_deploy: "systemctl start my-service && ./health_check.sh"
