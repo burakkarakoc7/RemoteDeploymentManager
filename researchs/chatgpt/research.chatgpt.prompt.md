@@ -14,10 +14,15 @@ derin araştırma yapmak.
 
 ### **İstekler:**
 **1.** Remote Deployment Manager nedir?
+
 **2.** Hangi problemleri çözer?
+
 **3.** Açık kaynak ve ticari çözümler karşılaştırılsın.
+
 **4.** Linux tabanlı sistemlerde kullanım senaryoları açıklansın.
+
 **5.** Güvenlik, yetkilendirme ve loglama mekanizmaları anlatılsın.
+
 **6.** Avantajlar, dezavantajlar ve gelecekteki trendler değerlendirilsin.
 
 ### **Çıktı Formatı:**
