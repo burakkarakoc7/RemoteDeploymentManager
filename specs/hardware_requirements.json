@@ -1,0 +1,21 @@
+{
+  "recommended_specs": {
+    "control_node": {
+      "cpu": "2 vCPU",
+      "ram": "4 GB",
+      "disk": "50 GB SSD",
+      "os": ["Ubuntu 22.04 LTS", "CentOS 9 Stream"]
+    },
+    "target_nodes": {
+      "cpu": "1 vCPU",
+      "ram": "512 MB",
+      "network": "1 Gbps Ethernet",
+      "python_version": ">= 3.9"
+    }
+  },
+  "network_rules": {
+    "ssh_port": 22,
+    "api_port": 8080,
+    "socket_timeout": 30
+  }
+}
