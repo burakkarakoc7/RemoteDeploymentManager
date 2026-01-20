@@ -1,0 +1,23 @@
+[
+  {
+    "server_id": "srv-prod-01",
+    "deployment_id": "dep-394",
+    "status": "SUCCESS",
+    "latency_ms": 45,
+    "error_rate": 0.0
+  },
+  {
+    "server_id": "srv-prod-02",
+    "deployment_id": "dep-394",
+    "status": "WARNING",
+    "latency_ms": 120,
+    "error_rate": 0.02
+  },
+  {
+    "server_id": "srv-canary-01",
+    "deployment_id": "dep-395-beta",
+    "status": "FAILED",
+    "latency_ms": 500,
+    "error_rate": 12.5
+  }
+]
