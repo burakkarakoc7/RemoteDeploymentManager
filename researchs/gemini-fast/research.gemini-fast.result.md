@@ -44,3 +44,58 @@ graph TD
     
     F -->|Log/Metrics| I[Monitoring - Prometheus]
     G -->|Log/Metrics| I
+```
+## 5. Web Sunum Arayüzü (HTML Code)
+Bulguları sunmak için hazırlanan modern HTML5 sayfası kodu aşağıdadır:
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Deployment Manager Raporu</title>
+    <style>
+        :root { --primary: #2563eb; --bg: #f8fafc; --text: #1e293b; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+        h1 { color: var(--primary); border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+        h2 { margin-top: 30px; color: #334155; }
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+        .card { background: #f1f5f9; padding: 20px; border-radius: 8px; border-left: 4px solid var(--primary); }
+        code { background: #e2e8f0; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
+        .footer { margin-top: 40px; text-align: center; font-size: 0.9em; color: #64748b; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Remote Deployment Manager Analizi</h1>
+        <p>Açık kaynak işletim sistemleri ve sunucu yönetiminde, dağıtım süreçlerinin otomasyonu kritik önem taşır. Bu rapor, modern dağıtım yöneticilerinin mimarisini inceler.</p>
+        
+        <h2>Temel Stratejiler</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Blue/Green</h3>
+                <p>İki özdeş ortam arasında anlık trafik geçişi sağlayarak kesintiyi önler.</p>
+            </div>
+            <div class="card">
+                <h3>Rolling Update</h3>
+                <p>Sunucuları sırayla güncelleyerek hizmetin sürekli ayakta kalmasını sağlar.</p>
+            </div>
+            <div class="card">
+                <h3>Canary</h3>
+                <p>Risk yönetimi için güncellemeyi önce küçük bir kitleye sunar.</p>
+            </div>
+        </div>
+
+        <h2>Öne Çıkan Açık Kaynak Araçlar</h2>
+        <ul>
+            <li><strong>Ansible:</strong> Agentless, Python tabanlı, SSH kullanır.</li>
+            <li><strong>Jenkins:</strong> Geniş eklenti desteği ile CI/CD standardı.</li>
+            <li><strong>ArgoCD:</strong> Kubernetes için GitOps tabanlı dağıtım.</li>
+        </ul>
+        
+        <div class="footer">
+            © 2025 Açık Kaynak İşletim Sistemi Projesi | Gemini Fast Research
+        </div>
+    </div>
+</body>
+</html>
